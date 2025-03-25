@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You My Love</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            text-align: center;
+            background-color: #F5F5DC;
+            padding: 50px;
+        }
+        #loveMessage {
+            font-size: 20px;
+            color: #3C0008;
+            width: 80%;
+            margin: auto;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Love Letter to You ❤️</h1>
+    <p id="loveMessage"></p>
+
+    <script>
+        let message = "Hey madam, you look so beautiful today.. but not just today.. You always look so beautiful every day.. I admire to steal a glance at you.. I love you more than I could express.. Life is better with you because you are my light in the darkest night and you put a smile on my face.. your laugh, your voice, and your smile are the things I love to see. I know sometimes you're tired and stressed, but you have to be patient and always try your best, darling. I want to know how you feel, how your day was, and you can vent it all to me. I'm here for you to take away all your pain. You don’t deserve to be hurt; you deserve the love, care, and attention that I give to you. Thank you for appearing in my life. I'm so happy to be with you, and to be honest, I always try my best to be a good partner for you. I hope you know that I sacrifice my love for you , only you, dear.💕";
+        let index = 0;
+const speed = 50; // Adjust typing speed
+
+function typeMessage() {
+    if (index < message.length) {
+        document.getElementById("loveMessage").innerHTML += message.charAt(index);
+        index++;
+        setTimeout(typeMessage, speed);
+    }
+}
+
+             typeMessage();
+         </script>
+     </body>
+     </html>
